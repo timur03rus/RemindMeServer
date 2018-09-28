@@ -7,6 +7,14 @@
     <groupId>om.qbz.faa.remindme.server</groupId>
     <artifactId>com.qbz.faa.remindme.server</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <spring-core.version>5.1.0.RELEASE</spring-core.version>
+        <spring-webmvc.version>5.1.0.RELEASE</spring-webmvc.version>
+        <spring-data-jpa.version>2.1.0.RELEASE</spring-data-jpa.version>
+        <hibernate-core.version>5.3.6.Final</hibernate-core.version>
+        <postgresql.version>9.1-901-1.jdbc4</postgresql.version>
+        <commons-dbcp2.version>2.5.0</commons-dbcp2.version>
+    </properties>
     <packaging>war</packaging>
 
 <dependencies>
@@ -14,14 +22,39 @@
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-core</artifactId>
-        <version>5.1.0.RELEASE</version>
+        <version>${spring-core.version}</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-webmvc</artifactId>
-        <version>5.1.0.RELEASE</version>
+        <version>${spring-webmvc.version}</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+    <dependency>
+        <groupId>org.springframework.data</groupId>
+        <artifactId>spring-data-jpa</artifactId>
+        <version>${spring-data-jpa.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>${hibernate-core.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
+    <dependency>
+        <groupId>postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>${postgresql.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2 -->
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-dbcp2</artifactId>
+        <version>${commons-dbcp2.version}</version>
     </dependency>
 
 </dependencies>
