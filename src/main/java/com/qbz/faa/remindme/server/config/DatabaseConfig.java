@@ -47,7 +47,7 @@ public class DatabaseConfig {
 
             return properties;
         } catch (IOException e) {
-            throw new IllegalArgumentException("Can't find 'hibernate.properties' in classpath.", e)
+            throw new IllegalArgumentException("Can't find 'hibernate.properties' in classpath.", e);
         }
     }
 
